@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Students</title>
+</head>
+
+<body>
+    <form action="POST" action="/api/students">
+        <div class="form-row">
+            <div class="form-group">
+                <label for="firstName">First name:</label>
+                <input type="text" name="firstName" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="lastName">Last name:</label>
+                <input type="text" name="lastName" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="year">Year:</label>
+                <input type="text" name="year" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="program">Program:</label>
+                <input type="text" name="program" class="form-control">
+            </div>
+        </div>
+        <div class="form-group">
+                <label for="sel1">Select operation:</label>
+                <select class="form-control" name="ops">
+                  <option>Add Student</option>
+                  <option>List Students</option>
+                  <option>Remove Student</option>
+                </select>
+              </div>
+        <input type="submit" class="btn btn-primary" value="Submit">
+    </form>
+</body>
+
+</html>
